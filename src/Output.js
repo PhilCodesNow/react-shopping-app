@@ -7,28 +7,21 @@ import './Output.css';
 function Output(props) {
     const {
         list,
-        handleCheckedChange
+        handleCheckedChange,
+        handleDeleteItem
     } = props
     return (
         <div className="output">
-            <OutputChecked
-            list={list}
-            handleCheckedChange={handleCheckedChange}
-            />
             <OutputUnchecked
             list={list}
             handleCheckedChange={handleCheckedChange}
+            handleDeleteItem={handleDeleteItem}
             />
-        {/* <ol>
-        {
-        list.map(listItem =>{
-           return <li className="output__li">
-                    {listItem}
-                    <input type="checkbox"></input>
-                </li>
-        })
-        }
-        </ol> */}
+            <OutputChecked
+            list={list}
+            handleCheckedChange={handleCheckedChange}
+            handleDeleteItem={handleDeleteItem}
+            />
         </div>
     )
 }

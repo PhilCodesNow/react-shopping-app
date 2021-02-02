@@ -30,13 +30,14 @@ function App() {
     newListItem.checked = !newListItem.checked
     newList[itemIndex] = newListItem
     setList(newList)
-    console.log(list) 
   }
-  // function handleCheckedChange(id){
-  //   const uncheckedList = list.filter(listItem => listItem.id !== id)
-  //   console.log(uncheckedList)
-    
-  // }
+
+  function handleDeleteItem(id){
+    let newList = [...list]
+    const itemIndex = newList.findIndex(item => item.id === id)
+    newList.splice(itemIndex, 1)
+    setList(newList)
+  }
 
   return (
     <div>
@@ -47,6 +48,7 @@ function App() {
       <Output
       list={list}
       handleCheckedChange={handleCheckedChange}
+      handleDeleteItem={handleDeleteItem}
       />
       
     </div>

@@ -1,29 +1,41 @@
 import React from 'react';
 import './OutputUnchecked.css';
+import DeleteIcon from '@material-ui/icons/DeleteForever';
+
 
 function OutputUnchecked(props) {
     const {
         list,
-        handleCheckedChange
+        handleCheckedChange,
+        handleDeleteItem
     } = props
 
     
 
 const uncheckedList = list.map(listItem =>{
     if(listItem.checked === false){
-        console.log('render')
         return (
             <li key={listItem.id}>
                {listItem.name}
             <input type="checkbox" name="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
+            <DeleteIcon
+                onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
             </li>
         )
+    }else{
+        return null
     }
 })
-console.log(list)
 
 
-return <div>{uncheckedList}</div>
+return (<div className="outputunchecked">
+        <div>
+            <h2>
+            Need
+            </h2>
+        </div>
+        {uncheckedList}
+        </div>)
 
 }
 
