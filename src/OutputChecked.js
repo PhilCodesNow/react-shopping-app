@@ -14,7 +14,7 @@ function OutputChecked(props) {
             return (
                 <li key={listItem.id}>
                    {listItem.name}
-                <input type="checkbox" name="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
+                <input type="checkbox" name="checked" checked="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
                 <DeleteIcon
                 onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
                 </li>
