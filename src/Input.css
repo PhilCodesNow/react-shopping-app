@@ -28,3 +28,6 @@
     font-size: 3.2em;
     padding-left: .3em;
 }
+.input__form > .MuiSvgIcon-root:hover{
+    cursor: pointer;
+}

@@ -12,11 +12,11 @@ function OutputChecked(props) {
     const checkedList = list.map(listItem =>{
         if(listItem.checked === true){
             return (
-                <li key={listItem.id}>
-                   {listItem.name}
-                <input type="checkbox" name="checked" checked="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
-                <DeleteIcon
-                onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
+                <li key={listItem.id} className="outputchecked__li">
+                    <input type="checkbox" name="checked" checked="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
+                    <h2>{listItem.name}</h2>
+                    <DeleteIcon
+                    onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
                 </li>
             )
         }else{
@@ -32,7 +32,9 @@ function OutputChecked(props) {
                 Checked
                 </h2>
             </div>
+            <ul className="outputchecked__ul">
             {checkedList}
+            </ul>
             </div>)
 }
 

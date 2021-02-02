@@ -1,9 +1,26 @@
 .outputchecked{
     background-color: palegoldenrod;
-    border-radius: 10%;
+    border-radius: 20px;
     padding: 1em;
-    margin: .3em;
+    margin: 4em 4em;
+    min-width: 40%;
 }
 .outputchecked__header{
     text-align: center;
+    font-size: 2em;
+}
+.outputchecked__ul{
+    list-style-type: none;
+}
+.outputchecked__li{
+    background-color: palegreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.outputchecked__li:nth-child(odd){
+    background-color: paleturquoise;
+}
+.outputchecked__li h2{
+    font-size: 2em;
 }
