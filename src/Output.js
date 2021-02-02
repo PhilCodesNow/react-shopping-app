@@ -1,18 +1,31 @@
-import React from 'react'
+import React from 'react';
+import OutputChecked from './OutputChecked';
+import OutputUnchecked from './OutputUnchecked';
+import './Output.css';
+
 
 function Output(props) {
     const {
         list
     } = props
     return (
-        <div>
-        <ol>
+        <div className="output">
+            <OutputChecked
+            list={list}
+            />
+            <OutputUnchecked
+            list={list}
+            />
+        {/* <ol>
         {
         list.map(listItem =>{
-           return <li>{listItem}</li>
+           return <li className="output__li">
+                    {listItem}
+                    <input type="checkbox"></input>
+                </li>
         })
         }
-        </ol>
+        </ol> */}
         </div>
     )
 }

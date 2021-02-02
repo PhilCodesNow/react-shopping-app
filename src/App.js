@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
 
-  const [list, setList] = useState(['list 1', 'list 2'])
+  const [list, setList] = useState([{name: 'list 1', checked: false}, {name: 'list 2', checked: false}])
   let listRef = useRef()
 
 
