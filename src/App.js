@@ -16,12 +16,16 @@ function App() {
 
 
   function handleInputSubmit(){
+    if(listRef.current.value === ''){
+      return
+    }else{
     const newList = listRef.current.value
     setList(prevList => {
       return [...prevList, {name: newList, checked: false, id: uuidv4()}]
     })
     listRef.current.value = ''
   }
+}
 
   function handleCheckedChange(id){
     let newList = [...list]
