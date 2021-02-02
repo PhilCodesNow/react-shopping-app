@@ -10,7 +10,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
-  const [list, setList] = useState([{name: 'item 1', checked: false, id: uuidv4()}, {name: 'item 2', checked: false, id: uuidv4()}, {name: 'item 3', checked: false, id: uuidv4()}])
+  const [list, setList] = useState([{name: 'item 1', checked: false, id: uuidv4()}, {name: 'item 2', checked: false, id: uuidv4()}, {name: 'item 3', checked: false, id: uuidv4()}, {name: 'item 4', checked: false, id: uuidv4()}])
   let listRef = useRef()
 
 
@@ -40,7 +40,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <Input
       handleInputSubmit={handleInputSubmit}
       listRef={listRef}

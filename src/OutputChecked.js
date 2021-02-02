@@ -27,7 +27,7 @@ function OutputChecked(props) {
     
     
     return (<div className="outputchecked">
-            <div>
+            <div className="outputchecked__header">
                 <h2>
                 Checked
                 </h2>

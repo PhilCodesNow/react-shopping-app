@@ -2,3 +2,7 @@
   margin: none;
   padding: none;
 }
+.app{
+  background-color: #98A7F1;
+  min-height: 100vh;
+}

@@ -29,7 +29,7 @@ const uncheckedList = list.map(listItem =>{
 
 
 return (<div className="outputunchecked">
-        <div>
+        <div className="outputunchecked__header">
             <h2>
             Need
             </h2>

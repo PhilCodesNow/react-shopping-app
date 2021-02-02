@@ -1,3 +1,9 @@
 .outputunchecked{
     background-color: palegoldenrod;
+    border-radius: 10%;
+    padding: 1em;
+    margin: .3em;
+}
+.outputunchecked__header{
+    text-align: center;
 }
