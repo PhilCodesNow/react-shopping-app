@@ -1,4 +1,3 @@
-import { ListItemSecondaryAction } from '@material-ui/core';
 import React from 'react';
 import './OutputUnchecked.css';
 
@@ -25,8 +24,9 @@ function OutputUnchecked(props) {
 // )
 
 // create array of unchecked list  items return those
-let uncheckedList = list.map(listItem =>{
+const uncheckedList = list.map(listItem =>{
     if(listItem.checked === false){
+        console.log('render')
         return (
             <li key={listItem.id}>
                {listItem.name}

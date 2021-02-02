@@ -24,13 +24,19 @@ function App() {
   }
 
   function handleCheckedChange(id){
-    let newList = list
-    const listItem = newList.findIndex(item => item.id === id)
-
-    newList[listItem].checked = !newList[listItem].checked
+    let newList = [...list]
+    const itemIndex = newList.findIndex(item => item.id === id)
+    let newListItem = {...newList[itemIndex]}
+    newListItem.checked = !newListItem.checked
+    newList[itemIndex] = newListItem
     setList(newList)
-    console.log(list)
+    console.log(list) 
   }
+  // function handleCheckedChange(id){
+  //   const uncheckedList = list.filter(listItem => listItem.id !== id)
+  //   console.log(uncheckedList)
+    
+  // }
 
   return (
     <div>
