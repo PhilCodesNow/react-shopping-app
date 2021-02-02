@@ -13,6 +13,7 @@ function Output(props) {
         <div className="output">
             <OutputChecked
             list={list}
+            handleCheckedChange={handleCheckedChange}
             />
             <OutputUnchecked
             list={list}
