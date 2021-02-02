@@ -1,11 +1,14 @@
-
+import Input from './Input';
+import Output from './Output';
 import './App.css';
 
 function App() {
   return (
     <div>
-      hello
+      <Input/>
+      <Output/>
     </div>
+
   );
 }
 
