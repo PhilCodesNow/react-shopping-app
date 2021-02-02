@@ -3,6 +3,7 @@ import AddBoxIcon from '@material-ui/icons/AddBox';
 import './Input.css';
 
 function Input() {
+
     return (
         <div className="input">
             <form>
