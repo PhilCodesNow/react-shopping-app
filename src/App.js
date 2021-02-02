@@ -17,7 +17,7 @@ function App() {
   function handleInputSubmit(){
     const newList = listRef.current.value
     setList(prevList => {
-      return [...prevList, newList]
+      return [...prevList, {name: newList, checked: false}]
     })
     listRef.current.value = ''
   }
