@@ -6,7 +6,8 @@ import './Output.css';
 
 function Output(props) {
     const {
-        list
+        list,
+        handleCheckedChange
     } = props
     return (
         <div className="output">
@@ -15,6 +16,7 @@ function Output(props) {
             />
             <OutputUnchecked
             list={list}
+            handleCheckedChange={handleCheckedChange}
             />
         {/* <ol>
         {
