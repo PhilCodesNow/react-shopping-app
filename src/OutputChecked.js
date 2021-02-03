@@ -1,6 +1,7 @@
 import React from 'react';
 import './OutputChecked.css';
 import DeleteIcon from '@material-ui/icons/DeleteForever';
+import EditIcon from '@material-ui/icons/Edit';
 
 function OutputChecked(props) {
 
@@ -15,8 +16,11 @@ function OutputChecked(props) {
                 <li key={listItem.id} className="outputchecked__li">
                     <input type="checkbox" name="checked" checked="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
                     <h2>{listItem.name}</h2>
-                    <DeleteIcon
-                    onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
+                    <div>
+                        <EditIcon></EditIcon>
+                        <DeleteIcon
+                        onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
+                    </div>
                 </li>
             )
         }else{

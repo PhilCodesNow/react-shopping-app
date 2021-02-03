@@ -25,3 +25,9 @@
     list-style-type: none;
     padding-left: none;
 }
+.outputunchecked__li div .MuiSvgIcon-root{
+    margin: 0 .1em;
+}
+.outputunchecked__li div .MuiSvgIcon-root:hover{
+    cursor: pointer;
+}

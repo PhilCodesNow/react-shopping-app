@@ -24,3 +24,9 @@
 .outputchecked__li h2{
     font-size: 2em;
 }
+.outputchecked__li div .MuiSvgIcon-root{
+    margin: 0 .1em;
+}
+.outputchecked__li div .MuiSvgIcon-root:hover{
+    cursor: pointer;
+}

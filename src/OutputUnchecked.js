@@ -1,6 +1,7 @@
 import React from 'react';
 import './OutputUnchecked.css';
 import DeleteIcon from '@material-ui/icons/DeleteForever';
+import EditIcon from '@material-ui/icons/Edit';
 
 
 function OutputUnchecked(props) {
@@ -18,8 +19,11 @@ const uncheckedList = list.map(listItem =>{
             <li key={listItem.id} className="outputunchecked__li">
                <input type="checkbox" name="checked" onClick={() => handleCheckedChange(listItem.id)}></input> 
                <h2>{listItem.name}</h2>
+               <div>
+                <EditIcon></EditIcon>
                 <DeleteIcon
                 onClick={() =>{handleDeleteItem(listItem.id)}}></DeleteIcon>
+                </div>
             </li>
         )
     }else{
