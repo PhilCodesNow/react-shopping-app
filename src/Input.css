@@ -1,0 +1,33 @@
+*:focus{
+    outline: none;
+}
+.input{
+    background-color: #D4D9F2;
+}
+.input__flex{
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center; 
+}
+.input__header{
+    position: absolute;
+    top: 0;
+    left: 1em;
+}
+.input__form{
+    display: flex;
+    align-content: center;
+}
+.input__form input[type=text]{
+    border-radius: 20px;
+    padding: .3em;
+    font-size: 1.4em;
+    text-align: center;
+}
+.input__form > .MuiSvgIcon-root{
+    font-size: 3.2em;
+    padding-left: .3em;
+}
+.input__form > .MuiSvgIcon-root:hover{
+    cursor: pointer;
+}
